@@ -652,6 +652,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+     // 基本折线图例子
+    var ctx = document.getElementById('cashflow-chart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['一月', '二月', '三月'],
+            datasets: [{
+                label: '样例数据',
+                data: [10, 20, 30],
+                borderColor: '#1997fc',
+                fill: false
+            }]
+        }
+    });
+});
     // 添加鍵盤事件處理
     numberInputs.forEach(input => {
         input.addEventListener('keypress', function(e) {
