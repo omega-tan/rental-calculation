@@ -1,3 +1,5 @@
+<canvas id="cashflow-chart" width="600" height="400"></canvas>
+
 // 全局變量
 let cashflowChart = null;
 let annualChart = null;
